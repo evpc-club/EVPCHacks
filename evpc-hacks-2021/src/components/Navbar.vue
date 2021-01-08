@@ -1,5 +1,5 @@
 <template>
-  <div id = "navbar">
+  <div id="navbar">
     <vs-navbar
       target-scroll="#padding-scroll-content"
       padding-scroll
@@ -37,7 +37,13 @@
       </template>
 
       <template #right>
-        <vs-button flat color="#00bbff" href="https://discord.gg/4C3eUdHKcR" blank>
+        <vs-button
+          flat
+          color="#00bbff"
+          href="https://discord.gg/4C3eUdHKcR"
+          blank
+          border
+        >
           <i class="bx bxl-discord"></i>
           <template #animate>
             <i class="bx bx-link"></i>
@@ -48,6 +54,7 @@
           blank
           href="https://github.com/EVProgrammingClub"
           flat
+          border
         >
           <i class="bx bxl-github"></i>
           <template #animate>
@@ -55,10 +62,18 @@
           </template>
         </vs-button>
 
+        <vs-button border color="#00bbff" blank href="https://github.com/ArmeetJatyani">
+          <i class="bx bx-coffee"></i>
+
+          <template #animate>
+            <i class="bx bxs-coffee"></i>
+          </template>
+        </vs-button>
+
         <vs-button color="#00bbff" href="/register">
           Register
           <template #animate>
-            <i class="bx bx-link"></i>
+            <i class="bx bxs-heart"></i>
           </template>
         </vs-button>
       </template>
