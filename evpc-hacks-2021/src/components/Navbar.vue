@@ -62,13 +62,15 @@
           </template>
         </vs-button>
 
-        <vs-button border color="#00bbff" blank href="https://github.com/ArmeetJatyani">
-          <i class="bx bx-coffee"></i>
-
-          <template #animate>
-            <i class="bx bxs-coffee"></i>
-          </template>
-        </vs-button>
+        <vs-tooltip bottom dark>
+          <vs-button border color="#00bbff" href="https://github.com/ArmeetJatyani" blank>
+            <i class="bx bx-coffee"></i>
+            <template #animate>
+              <i class="bx bxs-coffee"></i>
+            </template>
+          </vs-button>
+          <template #tooltip>Made by @ArmeetJatyani</template>
+        </vs-tooltip>
 
         <vs-button color="#00bbff" href="/register">
           Register
@@ -111,6 +113,12 @@ export default {
   letter-spacing: 2px;
 }
 
-vs-button {
+.vs-tooltip {
+  color:red;
+  background:red;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 </style>
