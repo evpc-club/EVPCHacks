@@ -9,6 +9,10 @@ import router from "./router";
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css'
 
+// Icons
+import 'boxicons';
+import 'boxicons/css/boxicons.min.css'
+
 Vue.config.productionTip = false;
 
 new Vue({
