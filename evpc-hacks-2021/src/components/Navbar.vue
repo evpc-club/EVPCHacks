@@ -37,47 +37,66 @@
       </template>
 
       <template #right>
-        <vs-button
-          flat
-          color="#00bbff"
-          href="https://discord.gg/4C3eUdHKcR"
-          blank
-          border
-        >
-          <i class="bx bxl-discord"></i>
-          <template #animate>
-            <i class="bx bx-link"></i>
+        <vs-tooltip bottom dark>
+          <vs-button
+            flat
+            color="#00bbff"
+            href="https://discord.gg/4C3eUdHKcR"
+            blank
+            border
+          >
+            <i class="bx bxl-discord"></i>
+            <template #animate>
+              <i class="bx bx-link"></i>
+            </template>
+          </vs-button>
+          <template #tooltip>
+            <p>Join our official Discord!</p>
           </template>
-        </vs-button>
-        <vs-button
-          color="#00bbff"
-          blank
-          href="https://github.com/EVProgrammingClub"
-          flat
-          border
-        >
-          <i class="bx bxl-github"></i>
-          <template #animate>
-            <i class="bx bx-link"></i>
-          </template>
-        </vs-button>
+        </vs-tooltip>
 
         <vs-tooltip bottom dark>
-          <vs-button border color="#00bbff" href="https://github.com/ArmeetJatyani" blank>
+          <vs-button
+            color="#00bbff"
+            blank
+            href="https://github.com/EVProgrammingClub"
+            flat
+            border
+          >
+            <i class="bx bxl-github"></i>
+            <template #animate>
+              <i class="bx bx-link"></i>
+            </template>
+          </vs-button>
+          <template #tooltip>
+            <p>Star our official GitHub!</p>
+          </template>
+        </vs-tooltip>
+
+        <vs-tooltip bottom dark>
+          <vs-button
+            border
+            color="#00bbff"
+            href="https://github.com/ArmeetJatyani"
+            blank
+          >
             <i class="bx bx-coffee"></i>
             <template #animate>
               <i class="bx bxs-coffee"></i>
             </template>
           </vs-button>
-          <template #tooltip>Made by @ArmeetJatyani</template>
+          <template #tooltip><p>Made by @ArmeetJatyani</p></template>
         </vs-tooltip>
 
-        <vs-button color="#00bbff" href="/register">
-          Register
-          <template #animate>
-            <i class="bx bxs-heart"></i>
-          </template>
-        </vs-button>
+        <vs-tooltip bottom dark>
+          <vs-button color="#00bbff" href="/register">
+            Register
+            <template #animate>
+              <i class="bx bxs-heart"></i>
+            </template>
+          </vs-button>
+          <template #tooltip><p>Register for EVPC Hacks!</p></template>
+        </vs-tooltip>
       </template>
     </vs-navbar>
   </div>
@@ -113,12 +132,10 @@ export default {
   letter-spacing: 2px;
 }
 
-.vs-tooltip {
-  color:red;
-  background:red;
+.vs-tooltip p {
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 </style>
