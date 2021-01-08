@@ -1,6 +1,6 @@
 <template>
-  <div id="home">
-    <Navbar active="home"/>
+  <div id="team">
+    <Navbar active="team"/>
     <Footer />
   </div>
 </template>
@@ -11,7 +11,7 @@ import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Home",
+  name: "Team",
   components: {
     Navbar,
     Footer

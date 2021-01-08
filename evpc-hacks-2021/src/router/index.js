@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Schedule from "../views/Schedule.vue"
+import Team from "../views/Team.vue"
+import Sponsors from "../views/Sponsors.vue"
 
 Vue.use(VueRouter);
 
@@ -15,6 +17,16 @@ const routes = [
     path: "/schedule",
     name: "Schedule",
     component: Schedule
+  },
+  {
+    path: "/team",
+    name: "Team",
+    component: Team
+  },
+  {
+    path: "/sponsors",
+    name: "Sponsors",
+    component: Sponsors
   }
 ];
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id = "navbar">
     <vs-navbar
       target-scroll="#padding-scroll-content"
       padding-scroll
