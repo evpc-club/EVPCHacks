@@ -37,7 +37,7 @@
       </template>
 
       <template #right>
-        <vs-button color="#00bbff" href="https://discord.gg/4C3eUdHKcR" blank>
+        <vs-button flat color="#00bbff" href="https://discord.gg/4C3eUdHKcR" blank>
           <i class="bx bxl-discord"></i>
           <template #animate>
             <i class="bx bx-link"></i>
@@ -47,6 +47,7 @@
           color="#00bbff"
           blank
           href="https://github.com/EVProgrammingClub"
+          flat
         >
           <i class="bx bxl-github"></i>
           <template #animate>
