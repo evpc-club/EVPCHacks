@@ -1,0 +1,6 @@
+- App
+    - Home
+    - Schedule
+    - Team
+    - Sponsors
+    - Sign Up 
