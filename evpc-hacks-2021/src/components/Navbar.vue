@@ -8,16 +8,28 @@
     >
       <template #left> </template>
       <template #default>
-        <vs-navbar-item :active="active == 'home'" id="home" to="/">
+        <vs-navbar-item 
+          :active="active == 'home'" 
+          id="home" 
+          to="/"
+        >
           Home
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'schedule'" id="schedule" to="/schedule">
+        <vs-navbar-item
+          :active="active == 'schedule'"
+          id="schedule"
+          to="/schedule"
+        >
           Schedule
         </vs-navbar-item>
         <vs-navbar-item :active="active == 'team'" id="team" to="/team">
           Team
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'sponsors'" id="sponsors" to="/sponsors">
+        <vs-navbar-item
+          :active="active == 'sponsors'"
+          id="sponsors"
+          to="/sponsors"
+        >
           Sponsors
         </vs-navbar-item>
       </template>
@@ -51,10 +63,19 @@
 <script>
 export default {
   name: "Navbar",
-  props: {},
+  props: {
+    active: String,
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
 </style>
