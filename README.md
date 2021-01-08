@@ -1,2 +1,2 @@
 # EVPCHacks
-EVPCHacks hosted by @EVPC
+EVPCHacks hosted by @EVProgrammingClub
