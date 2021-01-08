@@ -1,18 +1,20 @@
 <template>
-  <div class>
+  <div>
     <vs-navbar
       target-scroll="#padding-scroll-content"
       padding-scroll
       center-collapsed
       v-model="active"
+      notLine="true"
+      color="#040C0F"
+      textWhite
     >
-      <template #left> </template>
+      <template #left>
+        <img src="@/assets/img/logo/logo500x.png" width="50px" />
+        <h1 class="heavy"><a href="/">EVPC.Hacks(1);</a></h1>
+      </template>
       <template #default>
-        <vs-navbar-item 
-          :active="active == 'home'" 
-          id="home" 
-          to="/"
-        >
+        <vs-navbar-item :active="active == 'home'" id="home" to="/">
           Home
         </vs-navbar-item>
         <vs-navbar-item
@@ -20,7 +22,7 @@
           id="schedule"
           to="/schedule"
         >
-          Schedule
+          Schedule {{ primaryColor }}
         </vs-navbar-item>
         <vs-navbar-item :active="active == 'team'" id="team" to="/team">
           Team
@@ -35,21 +37,24 @@
       </template>
 
       <template #right>
-        <vs-button href="https://discord.gg/4C3eUdHKcR" blank>
+        <vs-button color="#00bbff" href="https://discord.gg/4C3eUdHKcR" blank>
           <i class="bx bxl-discord"></i>
-
           <template #animate>
             <i class="bx bx-link"></i>
           </template>
         </vs-button>
-        <vs-button blank href="https://github.com/EVProgrammingClub">
+        <vs-button
+          color="#00bbff"
+          blank
+          href="https://github.com/EVProgrammingClub"
+        >
           <i class="bx bxl-github"></i>
           <template #animate>
             <i class="bx bx-link"></i>
           </template>
         </vs-button>
 
-        <vs-button href="/register">
+        <vs-button color="#00bbff" href="/register">
           Register
           <template #animate>
             <i class="bx bx-link"></i>
@@ -71,11 +76,25 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
 
 * {
   font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
   font-size: 20px;
   letter-spacing: 2px;
+}
+
+.heavy a {
+  color: #00bbff;
+  text-decoration: none;
+  padding-left: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+vs-button {
 }
 </style>

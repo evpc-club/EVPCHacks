@@ -13,6 +13,10 @@ import 'vuesax/dist/vuesax.css'
 import 'boxicons';
 import 'boxicons/css/boxicons.min.css'
 
+Vue.use(Vuesax, {
+  
+})
+
 Vue.config.productionTip = false;
 
 new Vue({
@@ -20,8 +24,8 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-Vue.use(Vuesax, {
-  // TODO: options
-})
+
+
+
 
 
